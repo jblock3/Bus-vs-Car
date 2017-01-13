@@ -20,8 +20,7 @@
 # calculate total maintenance cost ((distance to and from campus) * (maintenance cost per km))
 # calculate total cost for driving car (((fuel cost) + (maintenance cost) + (parking cost)) *50)
 
-print(
-    'This program is desinged to determine whether it is cheaper to take the bus to campus, or to drive your car. Input your answers as numbers only (i.e. no $ signs needed)')
+print('This program is desinged to determine whether it is cheaper to take the bus to campus, or to drive your car. Input your answers as numbers only (i.e. no $ signs needed)')
 print()
 
 startPrompt = input('Do you want to continue (yes or no)? ')
