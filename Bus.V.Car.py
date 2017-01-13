@@ -37,7 +37,7 @@ totalBusCost = busTkt * 180
 
 # Calculations for car
 
-fuelEfficiency = float(input('How fuel efficient is your car (L/100km)? '))
+fuelEfficiency = float(input('How fuel efficient is your car (km/L)? '))
 GAS_PRICE = float(input('What is the current gas price in your city (in $)? '))
 DISTANCE = float(input('How far is campus from your house (in kms)? ')) * 2
 MAINTENANCE = float(input('What is your maintenance cost per km (in $)? '))
