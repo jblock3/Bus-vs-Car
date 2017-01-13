@@ -6,19 +6,19 @@
 
 # For bus:
 # Prompt user for bus price ticket for one way
-# mutiply that answer by 2 (for two way tkt)
-# Calculate total cost for bus (total tkt cost * 50 days)
+# multiply that answer by 2 (for two way tkt)
+# Calculate total cost for bus (total tkt cost * 180 days)
 
 # For car:
 # Prompt user for fuel efficiency of car (in L/km)
 # Prompt user for gas price (store as constant)
 # prompt user for distance to campus
-# mutiply distance by 2 (store as constant)
+# multiply distance by 2 (store as constant)
 # prompt user for maintenance cost per km (store as constant)
 # prompt user for parking cost
-# calculate total fuel cost ((fuel efficiency) * (gas price) * (distance to and from campus))
+# calculate total fuel cost ((gas price) / (fuel efficiency) * (distance to campus))
 # calculate total maintenance cost ((distance to and from campus) * (maintenance cost per km))
-# calculate total cost for driving car (((fuel cost) + (maintenance cost) + (parking cost)) *50)
+# calculate total cost for driving car (((fuel cost) + (maintenance cost) + (parking cost)) * 180)
 
 print('This program is designed to determine whether it is cheaper to take the bus to campus, or to drive your car over a period of 180 days (avg. amount of days of school per year). Input your answers as numbers only (i.e. no $ signs needed)')
 print()
