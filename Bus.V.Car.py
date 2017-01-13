@@ -20,7 +20,7 @@
 # calculate total maintenance cost ((distance to and from campus) * (maintenance cost per km))
 # calculate total cost for driving car (((fuel cost) + (maintenance cost) + (parking cost)) *50)
 
-print('This program is desinged to determine whether it is cheaper to take the bus to campus, or to drive your car. Input your answers as numbers only (i.e. no $ signs needed)')
+print('This program is designed to determine whether it is cheaper to take the bus to campus, or to drive your car over a period of 50 days. Input your answers as numbers only (i.e. no $ signs needed)')
 print()
 
 startPrompt = input('Do you want to continue (yes or no)? ')
@@ -37,7 +37,7 @@ totalBusCost = busTkt * 50
 
 # Calculations for car
 
-fuelEfficiency = float(input('How fuel efficient is your car (L/km)? '))
+fuelEfficiency = float(input('How fuel efficient is your car (L/100km)? '))
 GAS_PRICE = float(input('What is the current gas price in your city (in $)? '))
 DISTANCE = float(input('How far is campus from your house (in kms)? ')) * 2
 MAINTENANCE = float(input('What is your maintenance cost per km (in $)? '))
@@ -54,6 +54,13 @@ if totalCarCost <= totalBusCost:
     print('Take your car!')
 else:
     print('I know you wanna take your car, but it\'s cheaper to take the bus.')
+
+print()
+
+newBusCost = str(totalBusCost)
+newCarCost = str(totalCarCost)
+
+print('It will cost you' + ' ' + '$' + newBusCost + ' ' + 'to take the bus,' + ' ' + 'and' + ' ' + '$' + newCarCost + ' ' + 'to take your car')
 
 print()
 print('Thanks for using BUS vs CAR')
