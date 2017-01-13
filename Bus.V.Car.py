@@ -20,7 +20,7 @@
 # calculate total maintenance cost ((distance to and from campus) * (maintenance cost per km))
 # calculate total cost for driving car (((fuel cost) + (maintenance cost) + (parking cost)) *50)
 
-print('This program is designed to determine whether it is cheaper to take the bus to campus, or to drive your car over a period of 50 days. Input your answers as numbers only (i.e. no $ signs needed)')
+print('This program is designed to determine whether it is cheaper to take the bus to campus, or to drive your car over a period of 180 days (avg. amount of days of school per year). Input your answers as numbers only (i.e. no $ signs needed)')
 print()
 
 startPrompt = input('Do you want to continue (yes or no)? ')
@@ -33,7 +33,7 @@ if startPrompt == "no":
 
 userInput = float(input('How much does a one-way bus ticket cost you (in $)? '))
 busTkt = userInput * 2
-totalBusCost = busTkt * 50
+totalBusCost = busTkt * 180
 
 # Calculations for car
 
@@ -46,7 +46,7 @@ parkingCostPerDay = float(input('How much does parking cost on campus per day? '
 totalFuelCost = fuelEfficiency * GAS_PRICE * DISTANCE
 totalMaintenanceCost = DISTANCE * MAINTENANCE
 
-totalCarCost = (totalFuelCost + totalMaintenanceCost + parkingCostPerDay) * 50
+totalCarCost = (totalFuelCost + totalMaintenanceCost + parkingCostPerDay) * 180
 
 # This part decides which transportation method is cheapest based on the above calculations
 print()
