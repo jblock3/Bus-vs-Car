@@ -43,7 +43,7 @@ DISTANCE = float(input('How far is campus from your house (in kms)? ')) * 2
 MAINTENANCE = float(input('What is your maintenance cost per km (in $)? '))
 parkingCostPerDay = float(input('How much does parking cost on campus per day? '))
 
-totalFuelCost = fuelEfficiency * GAS_PRICE * DISTANCE
+totalFuelCost = GAS_PRICE / fuelEfficiency * DISTANCE
 totalMaintenanceCost = DISTANCE * MAINTENANCE
 
 totalCarCost = (totalFuelCost + totalMaintenanceCost + parkingCostPerDay) * 180
