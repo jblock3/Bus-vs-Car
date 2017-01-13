@@ -27,6 +27,8 @@ startPrompt = input('Do you want to continue (yes or no)? ')
 if startPrompt == "no":
     print()
     print('You said "no", therefore, we shall end it there.')
+    print()
+    print('See you next time!')
     quit()
 
 # Calculations for bus
@@ -40,7 +42,7 @@ totalBusCost = busTkt * 180
 fuelEfficiency = float(input('How fuel efficient is your car (km/L)? '))
 GAS_PRICE = float(input('What is the current gas price in your city (in $)? '))
 DISTANCE = float(input('How far is campus from your house (in kms)? ')) * 2
-MAINTENANCE = float(input('What is your maintenance cost per km (in $)? '))
+MAINTENANCE = float(input('What is your maintenance cost (in $/km)? '))
 parkingCostPerDay = float(input('How much does parking cost on campus per day? '))
 
 totalFuelCost = GAS_PRICE / fuelEfficiency * DISTANCE
@@ -57,10 +59,10 @@ else:
 
 print()
 
-newBusCost = str(totalBusCost)
-newCarCost = str(totalCarCost)
 
-print('It will cost you' + ' ' + '$' + newBusCost + ' ' + 'to take the bus,' + ' ' + 'and' + ' ' + '$' + newCarCost + ' ' + 'to take your car')
+print('It will cost you, over a period of 180 days,' + ' ' + '$' + "%.2f" % totalBusCost + ' ' + 'to take the bus,' + ' ' + 'and' + ' ' + '$' + "%.2f" % totalCarCost + ' ' + 'to take your car!')
 
 print()
 print('Thanks for using BUS vs CAR')
+print()
+print('See you soon ;)')
